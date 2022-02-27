@@ -10,6 +10,6 @@
 //If you read "...It Should encode XXX", the "XXX" is the expected result, not the input!
 
 function duplicateEncode(word) {
-    return [...word].map(x => word.match(new RegExp(x, "ig")).length === 1 ? "(" : ")").join("");
+    return [...word].map(x => word.match(new RegExp(`[${x}]`, "ig")).length === 1 ? "(" : ")").join("");
 }
 console.log(duplicateEncode("Success"));
