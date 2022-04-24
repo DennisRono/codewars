@@ -15,8 +15,8 @@
 const hashtag = (a) => {
     return (a.length>1&&a.length<140)?"#"+a.split(' ').map((w) => { return w[0].toUpperCase() + w.substring(1); }).join(""):false
 }
-
-console.log(hashtag("code" + " ".repeat(140) + "wars"));
+let rt = "code" + " ".repeat(140) + "wars"
+console.log(rt);
 
 // const mySentence = "freeCodeCamp is an awesome resource";
 // const words = mySentence.split(" ");
