@@ -13,7 +13,8 @@
 // ""                                        =>  false
 
 const hashtag = (a) => {
-    return (a.length>1&&a.length<140)?"#".concat(a.split('').map((w) => { return w[0].toUpperCase() + w.substring(1); }).join("")):false
+    let r = a.split('').map((w) => { return w[0].toUpperCase() + w.substring(1); }).join("")
+    return (a.length>1&&a.length<140)?"#"+r:false
 }
 
 console.log(hashtag("Do We have A Hashtag"));
