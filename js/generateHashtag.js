@@ -12,17 +12,15 @@
 // "    Hello     World   "                  =>  "#HelloWorld"
 // ""                                        =>  false
 
-// const hashtag = (a) => {
-//     return (a.length>1&&a.length<140)?"#".concat(a.split('').map((w) => { return w[0].toUpperCase() + w.substring(1); }).join()):false
-// }
+const hashtag = (a) => {
+    return (a.length>1&&a.length<140)?"#".concat(a.split('').map((w) => { return w[0].toUpperCase() + w.substring(1); }).join("")):false
+}
 
-// console.log(hashtag("Do We have A Hashtag"));
+console.log(hashtag("Do We have A Hashtag"));
 
-const mySentence = "freeCodeCamp is an awesome resource";
-const words = mySentence.split(" ");
+// const mySentence = "freeCodeCamp is an awesome resource";
+// const words = mySentence.split(" ");
 
-let w = words.map((word) => { 
-    return word[0].toUpperCase() + word.substring(1); 
-}).join("")
+// let w = words.map((word) => {return word[0].toUpperCase()+word.substring(1);}).join("")
 
-console.log(w);
+// console.log(w);
