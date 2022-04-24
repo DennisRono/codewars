@@ -10,14 +10,9 @@
 // For reference, the first two numbers in the Fibonacci sequence are 0 and 1, and each subsequent number is the sum of the previous two.
 
 
-// function nthFibo(n) {
-//     return Math.round(Math.pow((1 + Math.sqrt(5))/2, n) / Math.sqrt(5));
-// }
-
-function fib(n) {
-    let phi = (1 + Math.sqrt(5))/2;
-    let asymp = Math.pow(phi, n) / Math.sqrt(5);
-    return Math.round(asymp);
+function nthFibo(n) {
+    return Math.round(Math.pow((1 + Math.sqrt(5))/2, n-1) / Math.sqrt(5));
 }
-
-console.log(fib(10));
+for (let i = 0; i < 10; i++) {
+    console.log(nthFibo(i));
+}
