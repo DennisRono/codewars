@@ -8,7 +8,7 @@
 // arrayDiff([1,2,2,2,3],[2]) == [1,3]
 
 const arrdiff = (a, b) => {
-    return a.filter(element => !b.includes(element));
+    return a.filter(e => !b.includes(e));
 }
 
 console.log(arrdiff([1,2],[2]));
